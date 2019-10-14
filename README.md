@@ -8,8 +8,10 @@
     - kernels use channels
     
   ![With command queue](filter_chain.png "Filter chain")
-  
-  with autorun kernels the above executaion time reduces to 128.96
+   with autorun kernels the above executaion time reduces to 128.96
+  - Profiling Autorun kernels severly reduces the performance the profile call in runtime should be used wisely.
+  - To benefit from autorun overhead reduction reqd_work_group_size(1,1,1) should be removed. only max_global_work_dim and autorun attributes should be applied.
+ 
 - [x] To optimize resource overhead, in case of single work-item kernles, (1,1,1), max_global_work_dim(0) should be set
   - outcome: less resource usage
 * Note: non_blocking channels are useful if packet lost in tolerated.

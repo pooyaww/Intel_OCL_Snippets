@@ -1,7 +1,7 @@
 # Intel_OCL_Snippets
 ***
 ## Autorun Kernels
-- [ ] Autorun Kernels should be applied on intermediate kernels which don't have any parameters.
+- [x] Autorun Kernels should be applied on intermediate kernels which don't have any parameters.
   - requirements
     - single workitem kernel
     - kernels without parameters

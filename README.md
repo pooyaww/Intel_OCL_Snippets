@@ -21,3 +21,5 @@ It seems the solution to avoid pipeline stalls between kernels is to use either 
   - It can be applied by introducing a shift-register intrinsic in the compiler 
   
 -  Pipes are similar to channels but they need kernel parameters like HLS counterpart
+
+- [ ] Implement [Double buffering](https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html) for host code 
